@@ -1,0 +1,7 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+!staticfiles/
+staticfiles/*
+media/
+__pycache__
