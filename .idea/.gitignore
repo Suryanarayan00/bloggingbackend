@@ -3,5 +3,20 @@
 /workspace.xml
 !staticfiles/
 staticfiles/*
+
+# Distribution / packaging
+.Python
+venv/
+env/
+*.sqlite3
+.idea/
+# Project asset folders
 media/
-__pycache__
+# Database
+db.sqlite3
+# Editor directories and files
+.idea
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
