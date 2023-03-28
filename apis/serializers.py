@@ -27,6 +27,8 @@ class AboutmeSerializer(serializers.ModelSerializer):
 
 
 class BlogPostSerializer(serializers.ModelSerializer):
+    category = CategorySerializer(read_only=True)
+    categoryName = serializers.SlugRelatedField(queryset=Category.objects.all(), slug_field='name', write_only=True)
     class Meta:
         model = BlogPost
         fields = '__all__'

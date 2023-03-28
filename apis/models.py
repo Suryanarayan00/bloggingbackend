@@ -41,6 +41,9 @@ class ImageGallery(models.Model):
 class Aboutme(models.Model):
     photo = models.ImageField(upload_to='images', default='default.png')
     desc = models.TextField(default='description')
+    headerText1 = models.CharField(default="Hi there!,\n I am Nilesh", max_length=100)
+    headerText2 = models.CharField(default="Welcomes to my blogpost", max_length=100)
+    headerImage = models.ImageField(default='boat.png', upload_to='images' )
 
     def __str__(self):
         return str(self.id)
