@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-!#grr12@&p3f3r5*e2tk6l#2f3vvh8y6=zj+&9zci4l32plp^b'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -92,7 +92,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-db_from_env = dj_database_url.config()
+db_from_env = dj_database_url.parse("postgres://blogging_user:TGgGX71GUCdKNoHU3dL3VJ1Jm4qS0UCq@dpg-cgfv8ikeoogqfc76v87g-a.oregon-postgres.render.com/blogging")
 DATABASES['default'].update(db_from_env)
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators

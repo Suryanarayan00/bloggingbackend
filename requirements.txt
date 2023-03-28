@@ -41,11 +41,10 @@ Pillow==8.4.0
 prompt-toolkit==3.0.21
 proto-plus==1.19.7
 protobuf==3.19.1
-psycopg==3.1.2
-psycopg2==2.9.3
+psycopg2-binary==2.9.5
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
-PyJWT==2.4.0
+PyJWT==2.6.0
 pyparsing==2.4.7
 python-crontab==2.6.0
 python-dateutil==2.8.2
@@ -55,8 +54,7 @@ requests==2.26.0
 rsa==4.7.2
 six==1.16.0
 sqlparse==0.4.2
-twilio==7.10.0
-typing_extensions==4.3.0
+twilio==7.15.4
 uritemplate==4.1.1
 urllib3==1.26.7
 vine==5.0.0
