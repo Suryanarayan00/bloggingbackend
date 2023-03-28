@@ -44,6 +44,13 @@ class Aboutme(models.Model):
     headerText1 = models.CharField(default="Hi there!,\n I am Nilesh", max_length=100)
     headerText2 = models.CharField(default="Welcomes to my blogpost", max_length=100)
     headerImage = models.ImageField(default='boat.png', upload_to='images' )
+    githubLink = models.CharField(default='google.com', max_length=200)
+    instagramLink = models.CharField(default='google.com', max_length=200)
+    linkedInLink = models.CharField(default='google.com', max_length=200)
+    footerHeader=models.CharField(default='Nilesh Chandrakant', max_length=200)
+    footerSubheader = models.CharField(default='I can do anything, nothing is impossible and thats it', max_length=300)
+    phoneNumber = models.CharField(default='', max_length=13)
+    email = models.CharField(default='', max_length=50)
 
     def __str__(self):
         return str(self.id)
