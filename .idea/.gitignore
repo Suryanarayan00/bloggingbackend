@@ -12,6 +12,9 @@ env/
 .idea/
 # Project asset folders
 media/
+media/image
+__pycache__
+.vscode
 # Database
 db.sqlite3
 # Editor directories and files
